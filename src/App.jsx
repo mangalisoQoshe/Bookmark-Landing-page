@@ -1,15 +1,12 @@
-
-import './App.css'
+import "./App.css";
+import Nav from "./assets/components/Nav";
 
 function App() {
- 
-
   return (
-    <>
-      <h1>Hello World</h1>
-      <h1>Msnsga</h1>
-    </>
-  )
+    <div className="containter">
+     <Nav/>
+    </div>
+  );
 }
 
-export default App
+export default App;

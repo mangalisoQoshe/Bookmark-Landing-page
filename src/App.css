@@ -1,0 +1,19 @@
+.containter {
+  height: 100vh;
+  --max-width: 1440px;
+  --container-padding: 4rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+@media (max-width: 400px) {
+  .containter {
+    height: 100vh;
+    --max-width: 1440px;
+    --container-padding: 1rem;
+
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+  }
+}
