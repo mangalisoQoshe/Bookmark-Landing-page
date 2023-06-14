@@ -16,14 +16,32 @@ function Nav() {
       />
       <div className={`${styles.ulxbtn} ${isActive ? styles.active : ""}`}>
         <ul className={styles["nav-list"]}>
-          <li className={styles["navList-item"]}>FEATURES</li>
-          <li className={styles["navList-item"]}>PRICINGS</li>
-          <li className={styles["navList-item"]}>CONTACT</li>
+          <li className={styles["navList-link"]}>
+            <a className={styles["navList-item"]} href="">
+              FEATURES
+            </a>
+          </li>
+          <li className={styles["navList-link"]}>
+            <a className={styles["navList-item"]} href="">
+              PRICINGS
+            </a>
+          </li>
+          <li className={styles["navList-link"]}>
+            <a className={styles["navList-item"]} href="">
+              CONTACT
+            </a>
+          </li>
         </ul>
-        <button className={styles["navList-btn"]}>LOGIN</button>
+        <button role="login-btn" className={styles["navList-btn"]}>
+          LOGIN
+        </button>
         <div className={styles.socials}>
-            <button><img src="./icon-facebook.svg" alt="facebook icon" /></button>
-            <button><img src="./icon-twitter.svg" alt="twitter icon" /></button>
+          <a href="">
+            <img src="./icon-facebook.svg" alt="facebook icon" />
+          </a>
+          <a href="">
+            <img src="./icon-twitter.svg" alt="twitter icon" />
+          </a>
         </div>
       </div>
 

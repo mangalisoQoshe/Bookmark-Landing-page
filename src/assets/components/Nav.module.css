@@ -2,6 +2,8 @@
   padding-top: 2rem;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 .ulxbtn {
@@ -16,26 +18,26 @@
   gap: 2rem;
 }
 
+.navList-item{
+ text-decoration: none;
+ color: var(--darkBlue);
+}
+
 .navList-item:hover {
-  cursor: pointer;
   color: var(--softRed);
 }
 
 .navList-btn {
-  padding: 0.5rem 1.8rem;
+  
   background-color: var(--softRed);
-  border-radius: 0.3rem;
-  color: white;
-  border-style: solid;
-  border-width: 0.167rem;
   border-color: var(--softRed);
   margin-left: 1.5rem;
 }
 
 .navList-btn:hover {
-  background-color: transparent;
+ 
   color: var(--softRed);
-  cursor: pointer;
+
 }
 
 .socials {
@@ -96,6 +98,8 @@
     transition: 0.3s;
   }
 
+
+
   .ulxbtn.active .nav-list {
     display: block;
 
@@ -112,7 +116,7 @@
     border-color: white;
   }
 
-  .ulxbtn.active .navList-item {
+  .ulxbtn.active .navList-link {
     border-style: solid;
     border-color: white;
     border-width: 0.1rem;
@@ -120,6 +124,10 @@
     border-right: 0;
     border-bottom: 0;
     padding: 1.5rem 0.1rem;
+  }
+
+  .ulxbtn.active .navList-item{
+    color: white;
   }
 
   .ulxbtn.active .navList-btn {
@@ -134,11 +142,10 @@
 
   .ulxbtn.active .socials {
     display: flex;
-    gap: 2rem;
-    position: absolute;
-    bottom: 3rem;
-    right: 40%;
-    left: 40%;
+    gap: 1rem;
+    position: relative;
+    bottom: -200px;
+    justify-content: center;
     border: none;
   }
 

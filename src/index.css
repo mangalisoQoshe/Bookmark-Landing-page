@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -14,7 +13,6 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -68,8 +66,6 @@ svg {
   }
 }
 
-
-
 :root {
   font-family: "Rubik", sans-serif;
 
@@ -117,4 +113,21 @@ svg {
 body {
   color: var(--darkBlue);
   font-size: var(--txtFs);
+}
+
+/* Buttons */
+
+button {
+  padding: 0.5rem 1.8rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: var(--softBlue);
+  border-style: solid;
+  border-width: 0.167rem;
+}
+
+button:hover {
+  background-color: transparent;
+
+  cursor: pointer;
 }
