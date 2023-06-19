@@ -1,0 +1,30 @@
+.card{
+   
+    box-shadow: 2px 8px 13px rgba(0, 0, 0, 0.2);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    width: 85%;
+    height: 22rem;
+    margin-inline: auto;
+}
+
+.brand{
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.version{
+    margin-bottom: 2.5rem;
+    margin-top: 0.7rem;
+
+}
+
+.dots{
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+}
+
+.btn:hover{
+    color: var(--softBlue);
+}

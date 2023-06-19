@@ -1,0 +1,60 @@
+main{
+    margin-top: 7rem;
+}
+
+.features{
+    text-align: center;
+}
+
+.features-p{
+    margin-block: 1rem;
+}
+
+.downloads{
+    padding-block: 4rem;
+    text-align: center;
+}
+
+.downloads-heading{
+    margin-bottom: 1.5rem;
+}
+
+.questions-heading{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.questions-p{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.question-answer{
+    display: flex;
+    justify-content: flex-start;
+    padding-block: 1.5rem;
+    border-top: 0.1rem solid var(--greyishBlue);
+}
+
+.question-answer:hover{
+    cursor: pointer;
+    color: var(--softRed);
+}
+.arrow{
+    display:inline;
+    margin-left: auto;
+}
+
+.answer{
+    display: none;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+}

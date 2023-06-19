@@ -1,0 +1,25 @@
+footer{
+    text-align: center;
+}
+
+.contact-us,
+.secondary-nav{
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    padding-block: 2rem;
+    left:-16px;
+    color:white;
+   
+}
+
+
+.contact-us{
+    background-color: var(--softBlue);
+    
+}
+
+.secondary-nav{
+    background-color: var(--darkBlue);
+    
+}

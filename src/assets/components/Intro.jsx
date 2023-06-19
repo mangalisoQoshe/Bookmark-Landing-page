@@ -3,13 +3,13 @@ import styles from "./Intro.module.css";
 function Intro() {
   return (
     <header>
-      <div className={styles["illustration"]}>
+      <div className={`illustration ${styles["illustration"]}`}>
         <img
-          className={styles["hero-img"]}
+          className={`hero-img ${styles["hero-img"]}`}
           src="/illustration-hero.svg"
           alt="illustration hero image"
         />
-        <div className={styles["blue-thing"]}></div>
+        <div className={`blue-thing ${styles["blue-thing"]}`}></div>
       </div>
       <div className={styles["intro-content"]}>
         <h1 className={styles["intro-heading"]}>A Simple Bookmark Manager</h1>

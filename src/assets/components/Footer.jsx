@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import Nav from "./Nav";
+
 
 function Footer() {
   return (
