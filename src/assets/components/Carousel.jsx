@@ -1,17 +1,24 @@
+import { useState } from "react";
 import styles from "./Carousel.module.css";
 
-function Carousel({ active }) {
+function Carousel() {
+  const [active, setActive] = useState("bookmarking");
   let content;
+
+  const handleClick = (name) => {
+    setActive(name);
+  };
+
   switch (active) {
     case "bookmarking":
       content = (
         <div className={styles.content}>
-          <p className={`${styles.option}`}>
+          <p className={`${styles.option}`} onClick={()=>{handleClick("bookmarking")}}>
             <span className={styles.active}>Simple Bookmarking</span>
           </p>
 
-          <p className={styles.option}>Speedy Searching</p>
-          <p className={styles.option}>Easy Sharing</p>
+          <p className={styles.option} onClick={()=>{handleClick("searching")}} >Speedy Searching</p>
+          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>Easy Sharing</p>
           <div className={styles["content-2"]}>
             <div className={`illustration ${styles["illustration"]}`}>
               <img
@@ -37,11 +44,11 @@ function Carousel({ active }) {
     case "searching":
       content = (
         <div className={styles.content}>
-          <p className={styles.option}>Simple Bookmarking</p>
-          <p className={styles.option}>
-            <span className={styles.active}> Speedy Searching</span>
+          <p className={styles.option} onClick={()=>{handleClick("bookmarking")}}>Simple Bookmarking</p>
+          <p className={styles.option} onClick={()=>{handleClick("searching")}}>
+            <span className={styles.active} > Speedy Searching</span>
           </p>
-          <p className={styles.option}>Easy Sharing</p>
+          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>Easy Sharing</p>
           <div className={styles["content-two"]}>
             <div className={`illustration ${styles["illustration"]}`}>
               <img
@@ -66,10 +73,10 @@ function Carousel({ active }) {
     case "sharing":
       content = (
         <div className={styles.content}>
-          <p className={styles.option}>Simple Bookmarking</p>
+          <p className={styles.option} onClick={()=>{handleClick("bookmarking")}}>Simple Bookmarking</p>
 
-          <p className={styles.option}>Speedy Searching</p>
-          <p className={styles.option}>
+          <p className={styles.option} onClick={()=>{handleClick("searching")}}>Speedy Searching</p>
+          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>
             <span className={styles.active}>Easy Sharing</span>
           </p>
           <div className={styles["content-2"]}>

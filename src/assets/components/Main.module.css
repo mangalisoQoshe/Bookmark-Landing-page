@@ -1,60 +1,91 @@
-main{
-    margin-top: 7rem;
+main {
+  margin-top: 7rem;
 }
 
-.features{
-    text-align: center;
+.features {
+  text-align: center;
 }
 
-.features-p{
-    margin-block: 1rem;
+.features-p {
+  margin-block: 1rem;
 }
 
-.downloads{
-    padding-block: 4rem;
-    text-align: center;
+.downloads {
+  padding-block: 4rem;
+  text-align: center;
 }
 
-.downloads-heading{
-    margin-bottom: 1.5rem;
+.downloads-heading {
+  margin-bottom: 1.5rem;
 }
 
-.questions-heading{
-    text-align: center;
-    margin-bottom: 1.5rem;
+.questions-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-
-
-.questions-p{
-    text-align: center;
-    margin-bottom: 3.5rem;
+.q {
+  font-weight: var(--fw-sm);
 }
 
-
-
-.question-answer{
-    display: flex;
-    justify-content: flex-start;
-    padding-block: 1.5rem;
-    border-top: 0.1rem solid var(--greyishBlue);
+.questions-p {
+  text-align: center;
+  margin-bottom: 3.5rem;
 }
 
-.question-answer:hover{
-    cursor: pointer;
-    color: var(--softRed);
-}
-.arrow{
-    display:inline;
-    margin-left: auto;
+.question {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.answer{
-    display: none;
+.question-answer {
+  padding-block: 1.5rem;
+  border-top: 0.1rem solid var(--greyishBlue);
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin-block: 2rem;
+.question-answer:nth-child(6) {
+  border-bottom: 0.1rem solid var(--greyishBlue);
+}
+
+.question-answer:hover {
+  cursor: pointer;
+  color: var(--softRed);
+}
+
+.question-answer.active {
+  color: var(--darkBlue);
+}
+.arrow-img-active {
+  display: none;
+}
+
+.arrow-active {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="hsl(0, 94%, 66%)" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  margin-top: auto;
+  width: 18px;
+  height: 12px;
+  transform: rotateX(180deg);
+}
+
+.arrow {
+  display: inline;
+  margin-left: auto;
+}
+
+.answer {
+  display: none;
+}
+
+.answer-active {
+  margin-top: 2rem;
+  display: block;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
 }
