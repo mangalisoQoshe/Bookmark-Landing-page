@@ -4,7 +4,6 @@ footer {
 
 .contact-us,
 .secondary-nav {
-  width: 100vw;
   height: 300px;
   position: relative;
   padding-block: 2rem;
@@ -54,7 +53,6 @@ footer {
 
 .secondary-nav {
   background-color: var(--darkBlue);
- 
 }
 
 .secondary-logo {
@@ -68,19 +66,82 @@ footer {
   margin-bottom: 2rem;
 }
 
-.link{
-    color: var(--greyishblue);
-    text-decoration: none;
+.link {
+  color: var(--greyishblue);
+  text-decoration: none;
 }
 
-.links li{
-    margin-bottom: 2rem;
+.links li {
+  margin-bottom: 2rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2.7rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 401px) {
+  .contact-heading,
+  .form {
+    width: 45%;
+    margin-inline: auto;
+  }
+
+  .contact-us,
+  .secondary-nav {
+    left: 0;
+  }
+
+  .btn {
+    display: inline;
+    width: 30%;
+  }
+
+  .form-input {
+    width: 60%;
+    margin-right: 2.5%;
+  }
+
+  .contact-us {
+    padding-top: 4rem;
+  }
+
+  .secondary-logo {
+    margin-top: 0;
+    margin-inline: 0;
+    margin-left: 4rem;
+  }
+ 
+  .secondary-nav {
+    width: 100%;
+    padding-top: 3.5rem;
+    height: fit-content;
+    display: inline-flex;
+    align-content: center;
+  }
+
+  .links {
+    display: inline-flex;
+    gap: 1rem;
+    padding-top: 0.2rem;
+    margin-left: 3rem;
+    height: fit-content;
+  }
+
+  .link:hover{
+    color: var(--softRed);
+  }
+  .links li {
+    margin-bottom: 0;
     
-}
+  }
 
-.socials{
-    display: flex;
-    justify-content: center;
-    gap: 2.7rem;
-    margin-bottom: 4rem;
+  .socials {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    height: fit-content;
+  }
 }

@@ -13,12 +13,33 @@ function Carousel() {
     case "bookmarking":
       content = (
         <div className={styles.content}>
-          <p className={`${styles.option}`} onClick={()=>{handleClick("bookmarking")}}>
-            <span className={styles.active}>Simple Bookmarking</span>
-          </p>
+          <div className={styles["content-header"]}>
+            <p
+              className={`${styles.option}`}
+              onClick={() => {
+                handleClick("bookmarking");
+              }}
+            >
+              <span className={styles.active}>Simple Bookmarking</span>
+            </p>
 
-          <p className={styles.option} onClick={()=>{handleClick("searching")}} >Speedy Searching</p>
-          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>Easy Sharing</p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("searching");
+              }}
+            >
+              Speedy Searching
+            </p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("sharing");
+              }}
+            >
+              Easy Sharing
+            </p>
+          </div>
           <div className={styles["content-2"]}>
             <div className={`illustration ${styles["illustration"]}`}>
               <img
@@ -28,13 +49,15 @@ function Carousel() {
               />
               <div className={`blue-thing ${styles["blue-thing"]}`}></div>
             </div>
-            <h2>Bookmark in one click</h2>
-            <p className={styles["bookmark-p"]}>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <button className={styles["more-info"]}>More Info</button>
+            <div  className={styles["content-description"]}>
+              <h2>Bookmark in one click</h2>
+              <p className={styles["bookmark-p"]}>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button className={styles["more-info"]}>More Info</button>
+            </div>
           </div>
         </div>
       );
@@ -44,12 +67,33 @@ function Carousel() {
     case "searching":
       content = (
         <div className={styles.content}>
-          <p className={styles.option} onClick={()=>{handleClick("bookmarking")}}>Simple Bookmarking</p>
-          <p className={styles.option} onClick={()=>{handleClick("searching")}}>
-            <span className={styles.active} > Speedy Searching</span>
-          </p>
-          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>Easy Sharing</p>
-          <div className={styles["content-two"]}>
+          <div className={styles["content-header"]}>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("bookmarking");
+              }}
+            >
+              Simple Bookmarking
+            </p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("searching");
+              }}
+            >
+              <span className={styles.active}> Speedy Searching</span>
+            </p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("sharing");
+              }}
+            >
+              Easy Sharing
+            </p>
+          </div>
+          <div className={styles["content-2"]}>
             <div className={`illustration ${styles["illustration"]}`}>
               <img
                 className={`hero-img ${styles["hero-img"]}`}
@@ -58,12 +102,14 @@ function Carousel() {
               />
               <div className={`blue-thing ${styles["blue-thing"]}`}></div>
             </div>
-            <h2>Intelligent search</h2>
-            <p className={styles["bookmark-p"]}>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <button className={styles["more-info"]}>More Info</button>
+            <div className={styles["content-description"]}>
+              <h2>Intelligent search</h2>
+              <p className={styles["bookmark-p"]}>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button className={styles["more-info"]}>More Info</button>
+            </div>
           </div>
         </div>
       );
@@ -73,12 +119,33 @@ function Carousel() {
     case "sharing":
       content = (
         <div className={styles.content}>
-          <p className={styles.option} onClick={()=>{handleClick("bookmarking")}}>Simple Bookmarking</p>
+          <div className={styles["content-header"]}>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("bookmarking");
+              }}
+            >
+              Simple Bookmarking
+            </p>
 
-          <p className={styles.option} onClick={()=>{handleClick("searching")}}>Speedy Searching</p>
-          <p className={styles.option} onClick={()=>{handleClick("sharing")}}>
-            <span className={styles.active}>Easy Sharing</span>
-          </p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("searching");
+              }}
+            >
+              Speedy Searching
+            </p>
+            <p
+              className={styles.option}
+              onClick={() => {
+                handleClick("sharing");
+              }}
+            >
+              <span className={styles.active}>Easy Sharing</span>
+            </p>
+          </div>
           <div className={styles["content-2"]}>
             <div className={`illustration ${styles["illustration"]}`}>
               <img
@@ -88,12 +155,14 @@ function Carousel() {
               />
               <div className={`blue-thing ${styles["blue-thing"]}`}></div>
             </div>
-            <h2>Share your bookmarks</h2>
-            <p className={styles["bookmark-p"]}>
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <button className={styles["more-info"]}>More Info</button>
+            <div  className={styles["content-description"]}>
+              <h2>Share your bookmarks</h2>
+              <p className={styles["bookmark-p"]}>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button className={styles["more-info"]}>More Info</button>
+            </div>
           </div>
         </div>
       );

@@ -6,7 +6,7 @@ function Footer() {
       <section className={styles["contact-us"]}>
         <h5 className={styles["contact-heading"]}> 35,000+ ALREADY JOINED</h5>
         <h2 className={styles["contact_second-heading"]}>
-          Stay up-to-date with what we're doing
+          Stay up-to-date with what we{`'`}re are doing
         </h2>
         <form className={styles.form}>
           <input
@@ -20,28 +20,30 @@ function Footer() {
       </section>
       <section className={styles["secondary-nav"]}>
         <div className={styles["secondary-logo"]}></div>
-        <ul className={styles.links} role="list">
-          <li>
-            <a href="" className={styles.link}>
-              FEATURES
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.link}>
-              PRICING
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.link}>
-              CONTACT
-            </a>
-          </li>
-        </ul>
+       
+          <ul className={styles.links} role="list">
+            <li>
+              <a href="" className={styles.link}>
+                FEATURES
+              </a>
+            </li>
+            <li>
+              <a href="" className={styles.link}>
+                PRICING
+              </a>
+            </li>
+            <li>
+              <a href="" className={styles.link}>
+                CONTACT
+              </a>
+            </li>
+          </ul>
+ 
         <div className={styles.socials}>
-          <a>
+          <a href="">
             <img src="./icon-facebook.svg" alt="facebook icon" />
           </a>
-          <a>
+          <a href="">
             <img src="./icon-twitter.svg" alt="twitter icon" />
           </a>
         </div>

@@ -18,9 +18,9 @@ function Main() {
       <section className={styles.features}>
         <h2>Features</h2>
         <p className={styles["features-p"]}>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
+          Our aim is to make it quick and easy for you to access your <br />{" "}
+          favourite websites. Your bookmarks sync between your devices
+          <br /> so you can access them on the go.
         </p>
       </section>
       <section>
@@ -29,20 +29,18 @@ function Main() {
       <section className={styles.downloads}>
         <h2 className={styles["downloads-heading"]}>Download the extention</h2>
         <p>
-          We've got more browsers in the pipeline. Please do let us know if
-          you've got a favourite you'd like us to prioritize.
+          We{`'`}ve got more browsers in the pipeline. Please do let us know if
+          you{`'`}ve got a favourite you{`'`}d like us to prioritize.
         </p>
-        <Extension name="Chrome" />
-        <Extension name="Firefox" />
-        <Extension name="Opera" />
+        <Extension />
       </section>
       <section className={styles.questions}>
         <h2 className={styles["questions-heading"]}>
           Frequently Asked Questions
         </h2>
         <p className={styles["questions-p"]}>
-          Here are some of our FAQs. If you have any other questions you'd like
-          answered please feel free to email us.
+          Here are some of our FAQs. If you have any other questions you{`'`}d
+          like answered please feel free to email us.
         </p>
         <div
           className={styles["question-answer"]}
@@ -107,7 +105,9 @@ function Main() {
         >
           <div className={styles.question}>
             <h3 className={styles.q}>Is there a mobile app?</h3>
-            <span className={active == 3 ? styles["arrow-active"] : styles.arrow}>
+            <span
+              className={active == 3 ? styles["arrow-active"] : styles.arrow}
+            >
               <img
                 src="/icon-arrow.svg"
                 alt="arrow icon"
@@ -134,7 +134,9 @@ function Main() {
         >
           <div className={styles.question}>
             <h3 className={styles.q}>What about other Chromium browsers?</h3>
-            <span  className={active == 4 ? styles["arrow-active"] : styles.arrow}>
+            <span
+              className={active == 4 ? styles["arrow-active"] : styles.arrow}
+            >
               <img
                 src="/icon-arrow.svg"
                 alt="arrow icon"

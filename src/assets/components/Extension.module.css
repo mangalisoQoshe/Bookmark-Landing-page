@@ -1,5 +1,4 @@
 .card{
-   
     box-shadow: 2px 8px 13px rgba(0, 0, 0, 0.2);
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -27,4 +26,25 @@
 
 .btn:hover{
     color: var(--softBlue);
+}
+
+@media (min-width: 401px) {
+    .extension-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .card{
+        width: 300px;
+        margin: 1rem;
+    }
+
+    .card:nth-child(2){
+        margin-top: 4rem;
+    }
+
+    .card:nth-child(3){
+        margin-top: 8rem;
+    }
 }

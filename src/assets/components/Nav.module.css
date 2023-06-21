@@ -18,9 +18,9 @@
   gap: 2rem;
 }
 
-.navList-item{
- text-decoration: none;
- color: var(--darkBlue);
+.navList-item {
+  text-decoration: none;
+  color: var(--darkBlue);
 }
 
 .navList-item:hover {
@@ -28,16 +28,13 @@
 }
 
 .navList-btn {
-  
   background-color: var(--softRed);
   border-color: var(--softRed);
   margin-left: 1.5rem;
 }
 
 .navList-btn:hover {
- 
   color: var(--softRed);
-
 }
 
 .socials {
@@ -94,11 +91,9 @@
     height: 100vh;
     text-align: center;
     background-color: #29305fbe;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: 0.3s;
   }
-
-
 
   .ulxbtn.active .nav-list {
     display: block;
@@ -126,7 +121,7 @@
     padding: 1.5rem 0.1rem;
   }
 
-  .ulxbtn.active .navList-item{
+  .ulxbtn.active .navList-item {
     color: white;
   }
 

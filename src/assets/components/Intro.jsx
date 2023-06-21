@@ -5,7 +5,7 @@ function Intro() {
     <header>
       <div className={`illustration ${styles["illustration"]}`}>
         <img
-          className={`hero-img ${styles["hero-img"]}`}
+          className={`hero-img`}
           src="/illustration-hero.svg"
           alt="illustration hero image"
         />

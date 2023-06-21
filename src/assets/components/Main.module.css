@@ -1,5 +1,5 @@
 main {
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .features {
@@ -7,7 +7,8 @@ main {
 }
 
 .features-p {
-  margin-block: 1rem;
+  margin-block: 1.5rem;
+  
 }
 
 .downloads {
@@ -88,4 +89,15 @@ main {
   display: flex;
   justify-content: center;
   margin-block: 2rem;
+}
+@media (min-width: 401px) {
+  .questions{
+    width: 50%;
+    margin-inline: auto;
+    
+  }
+
+  .btn:hover{
+    color: var(--softBlue);
+  }
 }
