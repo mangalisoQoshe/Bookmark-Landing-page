@@ -1,6 +1,6 @@
 # Bookmark landing page
 
-URL https://mangalisoqoshe.github.io/Portfolio/
+URL https://clinquant-frangipane-dd47b4.netlify.app/
 
 # Frontend Mentor Challenge - Bookmark landing page
 

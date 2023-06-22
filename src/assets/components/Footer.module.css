@@ -1,5 +1,7 @@
 footer {
   text-align: center;
+  margin-top: 5rem;
+ 
 }
 
 .contact-us,
@@ -8,12 +10,14 @@ footer {
   position: relative;
   padding-block: 2rem;
   margin-inline: auto;
-  left: -16px;
+  
   color: white;
 }
 
 .contact-us {
   background-color: var(--softBlue);
+  outline: 1rem solid var(--softBlue);
+
 }
 
 .contact-heading {
@@ -53,6 +57,9 @@ footer {
 
 .secondary-nav {
   background-color: var(--darkBlue);
+  outline: 1rem solid var(--darkBlue);
+  border: 0.1rem solid var(--darkBlue);;
+
 }
 
 .secondary-logo {
